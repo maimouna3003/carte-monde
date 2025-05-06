@@ -68,6 +68,41 @@
          width: 200px;
           margin: 10px;
         }
+
+        .image-ligne{
+          display: flex;
+          justify-content: space-around;
+          overflow: hidden;
+          flex-wrap: wrap;
+        }
+
+        .first{
+          /* border: 2px solid black; */
+          display: flex;
+          justify-content: space-around;
+          overflow: hidden;
+          img{
+            transition: transform 0.5s ease;
+          }
+          img:hover{
+              /* border: 20px solid transparent; */
+              transform: scale(1.2);
+              background-color: lighten(black, 5%);
+          }
+        }
+
+        #lefleuve{
+          /* overflow: hidden; */
+          transition: transform 0.5s ease;
+          img{
+            transition: transform 0.5s ease;
+          }
+          img:hover{
+            transform: scale(1.1);
+            /* background-color: lighten(black, 5%); */
+          }
+        }
+        
       </style>
     
       <header>
@@ -87,10 +122,10 @@
         <p>Bassirou Diomaye Faye, né le 25 mars 1980 à Ndiaganiao, est un homme d'État sénégalais, président de la république du Sénégal depuis le 2 avril 2024 . Bassirou Diomaye Faye en juin 2024. Inspecteur des finances publiques, Bassirou Diomaye Faye est candidat à l'élection présidentielle de 2024 sous l'étiquette du PASTEF.</p>
         
         <h2>Symbole national</h2>
-     <div class="image-ligne">
-        <img src="senegalflag.png" alt="Drapeau du Sénégal" width=" 300px" margin =" 10px">
-        <img src="emblême.jpg" alt="emblême" width=" 400px" margin =" 10px" >
-        <img src="devise.png" alt="devise" width=" 400px" margin =" 10px">
+     <div class="image-ligne first">
+        <img src="senegalflag.png" alt="Drapeau du Sénégal" width=" 300px" margin =" 10px" height="133px">
+        <img src="emblême.jpg" alt="emblême" width=" 400px" margin =" 10px" height="133px" >
+        <img src="devise.png" alt="devise" width=" 400px" margin =" 10px" height="133px" >
     </div>
         <p>L'emblème du Sénégal est le lion, symbole de courage et de force. Le drapeau est composé de trois bandes verticales verte, jaune et rouge avec une étoile verte à cinq branches au centre.</p>
     
@@ -101,24 +136,23 @@
     
         
        
-    
+     <div id="lefleuve">
         <h2>Fleuves et paysages</h2>
-        <img src="fleuve senegal.jpg" alt="Fleuve Sénégal">
+        <img src="fleuve senegal.jpg" alt="Fleuve Sénégal" id="flp">
         <p>Le Sénégal est traversé par plusieurs fleuves importants, dont le fleuve Sénégal, le fleuve Gambie et le fleuve Casamance. Le pays offre une variété de paysages, allant des savanes aux forêts tropicales, en passant par des zones désertiques au nord.</p>
-      </section>
-      <section>
+     </div>
        
     
-
+        <div id="lefleuve">
         <h2>Atouts économiques</h2>
         <p>Le Sénégal dispose d’un secteur agricole riche (arachide, riz, horticulture), d’un potentiel halieutique énorme et d’un développement progressif de son industrie (agroalimentaire, cimenterie, chimie).</p>
         <img src="port dakar.jpg" alt ="port dakar" width=" 300px" margin ="10px">
         <p>Le port de Dakar est un des plus grands hubs logistiques de la sous-région.</p>
-    
+      </div>
 
         <h2>Richesse culturelle</h2>
         
-        <div class="image-ligne">
+        <div class="image-ligne" id="lefleuve">
             <img src="hospitalité.jpeg" alt="hospitalité" width=" 200px" margin ="10px">
             <img src="sabar.jpg" alt="sabar" width=" 200px" margin ="10px">
             <img src="youssou.jpg" alt="youssou" width=" 200px" margin ="10px">
@@ -127,7 +161,7 @@
     
 
         <h2>Tourisme et patrimoine</h2>
-        <div class="image-ligne">
+        <div class="image-ligne" id="lefleuve">
             <img src="gorée.jpg" alt="Gorée" width=" 200px" margin ="10px">
             <img src="lac-rose.jpeg" alt="lac rose" width=" 200px" margin ="10px">
             <img src="cap skirring.jpg" alt="cap skirring" width=" 200px" margin ="10px">
@@ -138,7 +172,7 @@
     
 
         <h2>Avancées sociales et politiques</h2>
-        <div class="image-ligne">
+        <div class="image-ligne" id="lefleuve">
             <img src="Lancement-du-premier-satellite-du-Senegal-GAINDESAT.jpg" alt="satellite" width=" 200px" margin ="10px">
             <img src="TER.jpg" alt="ter" width=" 200px" margin ="10px">
             <img src="stade AW.jpg" alt="stade" width=" 200px" margin ="10px">
@@ -151,7 +185,7 @@
      
       <section>
         <h2>🌍 Diversité géographique</h2>
-        <div class="image-ligne">
+        <div class="image-ligne" id="lefleuve">
             <img src="la verte casamance.jpeg" alt="la verte casamance" width=" 200px" margin ="10px">
             <img src="le sahel.jpg" alt="sahel" width=" 200px" margin ="10px">
             <img src="fleuve senegal.jpg" alt="fleuve senegal" width=" 200px" margin ="10px">
@@ -170,7 +204,7 @@
   
       <section>
         <h2>🗣️ Diversité linguistique</h2>
-        <div class="image-ligne">
+        <div class="image-ligne" id="lefleuve">
             <img src="diola.jpeg" alt="diola" width=" 300px" margin =" 10px">
             <img src="sérère.jpeg" alt="sérère" width=" 300px" margin =" 10px">
             <img src="soninké.jpeg" alt="soninké" width=" 300px" margin =" 10px">
@@ -185,7 +219,7 @@
   
       <section>
         <h2>🍛 Diversité culinaire</h2>
-        <div class="image-ligne">
+        <div class="image-ligne" id="lefleuve">
             <img src="yassa guinar.jpg" alt="yassa guinar" width=" 300px" margin =" 10px">
             <img src="mafe.jpg" alt="Mafé, plat traditionnel sénégalais" width=" 300px" margin =" 10px">
             <img src="thiep yap.jpeg" alt="thiep yap" width=" 300px" margin =" 10px">
